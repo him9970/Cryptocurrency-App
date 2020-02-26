@@ -13,7 +13,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   List currencies;
-  final List<MaterialColor> _colors = [Colors.green, Colors.blue, Colors.red];
+  final List<MaterialColor> _colors = [Colors.red, Colors.green, Colors.blue];
 
 //  @override
 //  void initState() async{
@@ -59,10 +59,10 @@ class _HomePageState extends State<HomePage> {
     return new ListTile(
       leading: new CircleAvatar(
         child: new Text(
-            currency['name'][0]
+            currency['name'][0],
         ),
+        backgroundColor: color,
       ),
-
       title: new Text(
         currency['name'],
         style: TextStyle(fontWeight: FontWeight.bold),
